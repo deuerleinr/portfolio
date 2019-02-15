@@ -1,0 +1,99 @@
+body{   
+   background: url("https://www.californiabeaches.com/wp-content/uploads/2016/06/Hermosa-Beach-pier-california-7-Large-1000x536.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+}
+ 
+
+.root{
+    display:grid;
+    grid-template-columns: .5fr .5fr;
+    grid-template-rows: 4fr;
+    grid-template-areas: 
+    "nameContainer projectContainer";
+    height: 2400px;
+    width:100%;
+}
+
+.nameContainer {
+    position:fixed;
+    grid-area: nameContainer;
+    height: 300px;    
+    width: 600px;
+    margin: 44px 0 0 40px; 
+    padding: 0 0 0 0 !important;    
+    /* background-color:rgba(187, 53, 53,0.3);    */
+
+} 
+
+.name{    
+    font-size:4em;
+    font-weight: 525;
+    color:rgb(110, 110, 122);
+    height:100px;
+    margin-top: -25px;
+}
+
+.links {    
+    height: 80px
+}
+
+.linkLine{
+    font-size:1.4em;
+    color:rgb(110, 110, 122);
+}
+
+.gitHub {
+    height: 10%;
+    width:10%;
+}
+
+.projectContainer {
+    grid-area: projectContainer;
+    height: 350vh;     
+    margin-top: 44px;        
+    padding: 0 0 0 80px; 
+}
+
+.projectCard {
+    height: 300px;
+    width: 480px;
+    margin: 0 0 15px 0;    
+    background-color:rgb(110, 110, 122);
+    padding: 15px 0 0 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+}
+
+
+ 
+.projectLabel{
+    height: 80px;
+    width:480px;
+    background-color:rgb(110, 110, 122);
+    color:white;
+    margin: 10px 0 70px 0;
+    border-radius: 4px;
+    padding-left:10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+}
+
+.projectLabel:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+img {
+    display:block;
+    height:240px;
+    width: 90%;
+    margin: 0 auto 0 auto;    
+}
+
+.projectTitle {
+    color:blue;
+    font-size: 1.05em;
+    font-weight: 600;
+}
